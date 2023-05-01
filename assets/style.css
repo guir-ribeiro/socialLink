@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+    font-size: 14px;
+}
+body{
+    height: 100%;
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Sora', sans-serif;
+}
+#container{
+    height: 100%;
+    max-width: 540px;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url(./images/perfil.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gradiente{
+    background: linear-gradient(to right, #5579ba, #41a377);
+}
+.userName{
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 16px 0;
+}
+.description{
+    font-size: 1rem;
+    color: #919193;
+}
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    gap: 1.2em;
+}
+
+.list-item{
+    font-size: 1.2em;
+    height: 4em;
+    border-radius: 2em;
+    display: flex;
+}
+.link{
+    padding: 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.link>img{
+    width: 1.2em;
+}
+footer{
+    display: flex;
+    gap: 1.5em;
+    justify-content: space-around;
+
+}
+.contacts{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.contacts>img{
+    width: 1.8em;
+}
+
+@media screen and (min-width:815px){
+    html{
+        font-size: 16px;
+    }
+}
